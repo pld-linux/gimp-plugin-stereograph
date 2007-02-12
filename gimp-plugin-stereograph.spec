@@ -1,5 +1,5 @@
 Summary:	Stereograph GIMP plug-in
-Summary(pl):	Wtyczka do tworzenia stereogramÛw dla GIMP-a
+Summary(pl.UTF-8):   Wtyczka do tworzenia stereogram√≥w dla GIMP-a
 Name:		gimp-plugin-stereograph
 Version:	1.5
 Release:	1
@@ -19,9 +19,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This is a GIMP plug-in interface to the Stereograph, a high quality
 Single Image Stereogram (SIS) generator by Fabian Januszewski.
 
-%description -l pl
-To jest wtyczka do GIMP-a uøywaj±ca interfejsu programu Stereograph,
-generatora wysokiej jako∂ci pojedynczych obrazÛw stereogramowych (SIS)
+%description -l pl.UTF-8
+To jest wtyczka do GIMP-a u≈ºywajƒÖca interfejsu programu Stereograph,
+generatora wysokiej jako≈õci pojedynczych obraz√≥w stereogramowych (SIS)
 Fabiana Januszewskiego.
 
 %prep
