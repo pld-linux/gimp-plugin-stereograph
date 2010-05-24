@@ -14,6 +14,7 @@ BuildRequires:	pkgconfig
 Requires:	gimp >= 1:2.2.0
 Requires:	gtk+2 >= 2:2.6.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+%define		gimpplugindir	%(gimptool --gimpplugindir)/plug-ins
 
 %description
 This is a GIMP plug-in interface to the Stereograph, a high quality
@@ -34,8 +35,8 @@ Fabiana Januszewskiego.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT/%(gimptool --gimpplugindir)/plug-ins
-install stereograph $RPM_BUILD_ROOT/%(gimptool --gimpplugindir)/plug-ins
+install -d $RPM_BUILD_ROOT%{gimpplugindir}
+install stereograph $RPM_BUILD_ROOT%{gimpplugindir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -43,4 +44,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc NEWS README README.hacking
-%attr(755,root,root) %(gimptool --gimpplugindir)/plug-ins/stereograph
+%attr(755,root,root) %{gimpplugindir}/stereograph
