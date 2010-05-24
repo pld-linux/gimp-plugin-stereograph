@@ -2,7 +2,7 @@ Summary:	Stereograph GIMP plug-in
 Summary(pl.UTF-8):	Wtyczka do tworzenia stereogramów dla GIMP-a
 Name:		gimp-plugin-stereograph
 Version:	1.5
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Applications/Graphics
 Source0:	http://trific.ath.cx/Ftp//gimp/stereograph/stereograph-gimp-%{version}.tar.bz2
@@ -43,5 +43,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc NEWS README README.hacking
+%doc NEWS README README.hacking README.stereograph
 %attr(755,root,root) %{gimpplugindir}/stereograph
