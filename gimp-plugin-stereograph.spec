@@ -34,8 +34,8 @@ Fabiana Januszewskiego.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT/%(gimptool --gimpplugindir)/plug-ins
+install stereograph $RPM_BUILD_ROOT/%(gimptool --gimpplugindir)/plug-ins
 
 %clean
 rm -rf $RPM_BUILD_ROOT
